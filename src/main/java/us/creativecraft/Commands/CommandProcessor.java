@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class CommandProcessor {
 
-    public static HashMap<String, Object> commands = new HashMap<String, Object>();
+    private static HashMap<String, Object> commands = new HashMap<>();
 
     public static void processCommands(){
         int registeredCommands = 0;
@@ -20,7 +20,7 @@ public class CommandProcessor {
             registeredCommands++;
         }
 
-        Logger.Log("Successfully registered " + registeredCommands + " commands.");
+        Logger.log("Successfully registered " + registeredCommands + " commands.");
     }
 
     public static void addCommand(String command, Object commandObject){
