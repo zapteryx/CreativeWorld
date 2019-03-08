@@ -23,7 +23,8 @@ public class Language {
     private FileConfiguration language;
 
 
-    public String no_Perm;
+    public static String prefix = ChatColor.AQUA + "[CreativeWorld] " + ChatColor.RESET;
+    public static String no_Perm;
 
     public Language(){
         loadLanguageFile();
@@ -32,7 +33,7 @@ public class Language {
 
 
     private void loadAllNodes(){
-        no_Perm = loadNodeFromConfig("no_Perm");
+        no_Perm = prefix + loadNodeFromConfig("no_Perm");
     }
 
 

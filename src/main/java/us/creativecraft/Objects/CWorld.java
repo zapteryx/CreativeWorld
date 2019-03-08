@@ -1,6 +1,9 @@
 package us.creativecraft.Objects;
 
 import org.bukkit.World;
+import us.creativecraft.CManager;
+
+import java.util.UUID;
 
 public class CWorld {
 
